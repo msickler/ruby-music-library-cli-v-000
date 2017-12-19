@@ -6,8 +6,12 @@ class Song
     @@all = []
   end
 
-def name 
-  @name 
+def self.name
+  @name
+end
+
+def self.all
+  @@all 
 end 
 
 
