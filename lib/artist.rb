@@ -5,30 +5,30 @@ class Artist
   def initialize(name)
     @name = name
     @@all << self
-  end 
+  end
 
   def self.name
-    @name 
-  end 
+    @name
+  end
 
-  def self.all 
-    @@all 
-  end 
+  def self.all
+    @@all
+  end
 
   def self.destroy_all
-    @@all.clear 
-  end 
+    @@all.clear
+  end
 
   def save
-    @@all << self 
-  end 
+    @@all << self
+  end
 
   def create(name)
     artist = Artist.new(name)
     artist.save
-    artist 
-  end 
+    artist
+  end
 
-  
+
 
 end
