@@ -42,8 +42,8 @@ class MusicLibraryController
   end
 
   def list_artists
-    artists = Artist.all 
+    artists = Artist.all
     artists = artists.sort_by { |a| a.name }
-    artists 
-  end 
+    artists
+  end
 end
