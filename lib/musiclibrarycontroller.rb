@@ -77,6 +77,8 @@ class MusicLibraryController
      puts "Which song number would you like to play?"
      input = gets.strip.to_i
      if input.between?(1, Song.all.length)
+     end
+   end 
 
 
 end
