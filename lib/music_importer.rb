@@ -14,4 +14,8 @@ class MusicImporter
     files.map { |name| name.gsub("#{path}/", "")  }
   end
 
+  def self.import
+    files.map { |name| Song.create_from_filename(name) }
+  end 
+
 end
