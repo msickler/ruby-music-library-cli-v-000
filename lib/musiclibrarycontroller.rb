@@ -6,9 +6,10 @@ class MusicLibraryController
     MusicImporter.new(path).import
   end
 
-  def call 
+  def call
     puts "Welcome to your music library!"
-  end 
+    input = gets.strip
+  end
 
 
 end
