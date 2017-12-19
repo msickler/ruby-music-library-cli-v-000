@@ -15,12 +15,15 @@ def self.all
 end
 
 def self.destroy_all
-  @@all.destroy 
-end 
+  @@all.destroy
+end
 
-def self.save 
+def self.save
   @@all << self
-end 
+end
+
+def create
+end
 
 
 end
