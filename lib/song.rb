@@ -42,5 +42,8 @@ class Song
     genre.add_song(self)
   end
 
+  def self.find_by_name(name)
+    self.all.detect { |n| n.name == name }
+  end
 
 end
