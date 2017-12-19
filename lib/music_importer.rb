@@ -16,6 +16,6 @@ class MusicImporter
 
   def self.import
     files.map { |name| Song.create_from_filename(name) }
-  end 
+  end
 
 end
