@@ -14,5 +14,13 @@ def self.all
   @@all
 end
 
+def self.destroy_all
+  @@all.destroy 
+end 
+
+def self.save 
+  @@all << self
+end 
+
 
 end
