@@ -39,9 +39,9 @@ class Artist
     song.artist = self unless song.artist == self
   end
 
-  def genres 
-    self.songs.map { |song| song.genre }.uniq 
-  end 
+  def genres
+    self.songs.map { |song| song.genre }.uniq
+  end
 
 
 end
