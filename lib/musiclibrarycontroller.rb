@@ -30,8 +30,15 @@ class MusicLibraryController
       self.list_songs_by_artist
     elsif input == "list genre"
       self.list_songs_by_genre
-    end 
+    elsif input == "play song"
+      self.play_song
+    end
   end
 
+  def list_songs
+    songs = Song.all 
+    songs = songs.sort_by { |s| s.name }
+    songs = songs.each_with_index { |s, index| puts "#{index + 1}. #{s.artist.name} - #{s.name} - #{s.genre.name}"}
+  end 
 
 end
